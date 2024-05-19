@@ -1,17 +1,5 @@
-<style>
-    .bot{
-        width:60px;
-        height:60px;
-        border-radius:50%;
-        border:2px solid white;
-    }
-    .bot:hover{
-        transform: translate(0, -5px);
-    }
-</style>
 # Discord Music Bot
-
-<img src="images/bot.jpg" alt="Bot image" class="bot">
+<img src="images/bot.jpg" height="60px" width="60px" alt="Bot Image">
 
 Discord Music Bot is a versatile Discord bot designed to enhance your server's music experience. With this bot, you can play music from YouTube, manage music queues, control playback, and more.
 
