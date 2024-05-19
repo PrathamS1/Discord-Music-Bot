@@ -16,7 +16,7 @@ const sodium = require('libsodium-wrappers');
     });
 
     const prefix = '!';
-    const token = 'Enter Your Bot Token Here';
+    const token = 'Enter Your Bot Token Here'; //Enter your Discord Bot Token Here
     const queue = new Map();
 
     client.once('ready', () => {

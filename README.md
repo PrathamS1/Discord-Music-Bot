@@ -1,6 +1,17 @@
+<style>
+    .bot{
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        border:2px solid white;
+    }
+    .bot:hover{
+        transform: translate(0, -5px);
+    }
+</style>
 # Discord Music Bot
 
-![Discord Music Bot Logo](<logo_url>)
+<img src="images/bot.jpg" alt="Bot image" class="bot">
 
 Discord Music Bot is a versatile Discord bot designed to enhance your server's music experience. With this bot, you can play music from YouTube, manage music queues, control playback, and more.
 
@@ -17,22 +28,41 @@ Discord Music Bot is a versatile Discord bot designed to enhance your server's m
 
 To use Discord Music Bot, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/PrathamS1/Smart-Calendar-Task-Scheduler.git
+    ```
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+    ```bash
+    npm install discord.js@latest
+    ```
+    ```bash
+    npm install libsodium-wrappers
+    ```
+3. **Add your Discord bot token in the code:**
+    ```
+    Line 19: const token = 'Enter Your Bot Token Here';
+    ```
+4. **Enable Intents**
+    1. Go to the Discord Developer Portal and select your application.
+    2. Navigate to the "Bot" section.
+    3. Enable the following intents:
+        * Privileged Gateway Intents: Turn on Message Content Intent, Presence Intent, and Server Members Intent.
+5. **Add Bot to your server**
+    1. **Generate an OAuth2 URL:**
+    In the OAuth2 section of your application in the Discord Developer Portal, generate a URL with the bot scope and the Administrator permission.
 
-2. Install dependencies:
-
-3. Set up environment variables:
-- Create a `.env` file in the project root.
-- Add your Discord bot token to the `.env` file:
-  ```
-  BOT_TOKEN=<your_bot_token>
-  ```
-
-4. Start the bot:
-
+    2. **Invite the Bot:**
+    Open the generated URL in your browser and invite the bot to your server.
+4. **Start the bot:**
+    ```bash
+    node index.js
+    ```
 ## Usage
-
-Once the bot is running and connected to your Discord server, you can use the following commands:
+Once the bot is running and connected to your Discord server, join a voice channel and can use the following commands in a text channel:
 
 - `!play <YouTube_URL>`: Play a song from YouTube.
 - `!skip`: Skip the current song.
